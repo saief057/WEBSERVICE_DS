@@ -20,29 +20,27 @@ public class DbTest {
         // create an object factory
         ObjectFactory of = new ObjectFactory();
 
-        //create three address
-        Address ad1 = of.createAddress();
-        ad1.setCity("Tunis");
-        ad1.setPostCode(5566);
-        ad1.setStreet("tunis");
-        Address ad2 = of.createAddress();
-        ad2.setCity("Manouba");
-        ad2.setPostCode(4433);
-        ad2.setStreet("manouba");
+        //creating address
+        Address add1 = of.createAddress();
+        add1.setCity("Gabes");
+        add1.setPostCode(6080);
+        add1.setStreet("Rue Mohamed VX 35 beb bhar ");
+        Address add2 = of.createAddress();
+        add2.setCity("Sfax");
+        add2.setPostCode(6005);
+        add2.setStreet("15 Rue Fadhel ben achour ");
 
         // create list of student
         Student s1 = of.createStudent();
         s1.setId(1);
-        s1.setName("Rick");
-        s1.setAddress(ad1);
+        s1.setName("Saief");
+        s1.setAddress(add1);
         Student s2 = of.createStudent();
         s2.setId(2);
-        s2.setName("Morty");
-        s2.setAddress(ad2);
+        s2.setName("Yahia");
+        s2.setAddress(add2);
         Student s3 = of.createStudent();
-        s3.setId(3);
-        s3.setName("Marx");
-        s3.setAddress(ad2);
+
 
         // create two exam
         Exam e1 = of.createExam();
@@ -85,10 +83,10 @@ public class DbTest {
             WhiteTestResponse wt1 = of.createWhiteTestResponse();
             wt1.setStudent(s1);
             wt1.setExam(e1);
-            xmlGregorianCalendar1.setYear(2015);
-            xmlGregorianCalendar1.setTime(11,30,15);
-            xmlGregorianCalendar1.setDay(15);
-            xmlGregorianCalendar1.setMonth(1);
+            xmlGregorianCalendar1.setYear(2019);
+            xmlGregorianCalendar1.setTime(18,30,15);
+            xmlGregorianCalendar1.setDay(9);
+            xmlGregorianCalendar1.setMonth(5);
             wt1.setDate(xmlGregorianCalendar1);
             listOfdata.add(wt1);
         }
@@ -97,10 +95,10 @@ public class DbTest {
             WhiteTestResponse wt2 = of.createWhiteTestResponse();
             wt2.setStudent(s2);
             wt2.setExam(e2);
-            xmlGregorianCalendar2.setYear(2012);
-            xmlGregorianCalendar2.setTime(12,28,5);
-            xmlGregorianCalendar2.setDay(18);
-            xmlGregorianCalendar2.setMonth(5);
+            xmlGregorianCalendar2.setYear(2021);
+            xmlGregorianCalendar2.setTime(16,28,5);
+            xmlGregorianCalendar2.setDay(30);
+            xmlGregorianCalendar2.setMonth(1);
             wt2.setDate(xmlGregorianCalendar2);
             listOfdata.add(wt2);
         }
@@ -109,10 +107,10 @@ public class DbTest {
             WhiteTestResponse wt3 = of.createWhiteTestResponse();
             wt3.setStudent(s3);
             wt3.setExam(e1);
-            xmlGregorianCalendar3.setYear(2018);
+            xmlGregorianCalendar3.setYear(2020);
             xmlGregorianCalendar3.setTime(12,2,5);
-            xmlGregorianCalendar3.setDay(6);
-            xmlGregorianCalendar3.setMonth(8);
+            xmlGregorianCalendar3.setDay(1);
+            xmlGregorianCalendar3.setMonth(1);
             wt3.setDate(xmlGregorianCalendar3);
             listOfdata.add(wt3);
         }
